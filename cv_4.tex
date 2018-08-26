@@ -1,0 +1,122 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
+\name{Ao Zeng} % Your name
+\address{617-893-4312 \\ zeng1@andrew.cmu.edu} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+\begin{rEducation}{Carnegie Mellon University, School of Computer Science}{Dec 2018}{Major: Computational Data Science (System Track) GPA:3.83}
+    {Pittsburgh, PA}
+\end{rEducation}
+\begin{rEducation}{University of North Carolina at Chapel Hill}{May 2017}{Dual Major: Computer Science and Mathematics \ \ \ \  GPA: 3.81}
+    {Chapel Hill, NC}
+\end{rEducation}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Course Project}
+
+\begin{rSubsection}{Cloud Computing with Spark}{Spring 2018}{Carnegie Mellon University}{Pittsburgh, PA}{}
+    \item Performed ETL, developed and implemented a scalable distributed iterative machine learning program using Apache Spark on AWS.
+\end{rSubsection}
+%------------------------------------------------
+
+\begin{rSubsection}{Distributed System Consensus Protocol and Load Balancing}{Fall 2017}{Carnegie Mellon University}{Pittsburgh, PA}{}
+\item Implemented a status replication service for log replication among multiple servers using the Master-Slave model
+ in Golang based on the Raft algorithm paper.
+\item Built a simple key value store service in Golang using consistent hash and cache for load balancing.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Disk-Oriented Database Storage System}{Fall 2017}{Carnegie Mellon University}{Pittsburgh, PA}
+{Implemented fundamental components of a single node, disk-oriented database storage manager in C++, including:}
+\item Memory buffer pool using LRU replacement policy for fetching database pages.
+\item Lock Manager supporting two-phase locking and strict two-phase locking for concurrency control.
+\item Database index using concurrent B+ Tree data structure.
+\item Part of the ARIES protocol for database logging and recovery.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Web Application}{Fall 2016}{University of North Carolina}{Chapel Hill, NC}{}
+\item Built a prototype web application, allowing user to send real-time messages, share interesting events on
+ their calendars, and use third party API to check friends' recent gaming histories.
+\item Wrote front end in Javascript using JQuery and AJAX to dynamically generate page contents and adjust display.
+\item Designed and implemented back end ORM layer using PHP and SQL.
+\end{rSubsection}
+
+\end{rSection}
+
+\begin{rSection}{Experience}
+\begin{rResearch}{Splice Machine Inc}{May 2018 - Aug 2018}
+    {Software Developer}{}{}
+    \item Experienced a full development cycle, where I designed and implemented the support for Python stored procedure and user-defined function to the database from scratch by modifying the
+    SQL parser, the query plan and the code generation modules.
+    \item Presented multiple times to the entire development team, resulting in positive feedback and helpful advice.
+\end{rResearch}
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{SKILLS}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming Languages:&C/C++, Java, Golang, Python, SQL, JavaScript, PHP\\
+Application Program:&Mathematica, \LaTeX\\
+Frameworks and Tools: &jQuery, SciPy, Git, Matplotlib
+\end{tabular}
+
+\end{rSection}
+
+\begin{rSection}{Awards}
+    Dean's List ($\times$4), University of North Carolina at Chapel Hill 
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
